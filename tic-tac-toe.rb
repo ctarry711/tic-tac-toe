@@ -9,14 +9,14 @@ class Game
 
   def row_complete?(token)
     @board.any? do |row|
-      row.all? {|position| position == token}
+      row.all? { |position| position == token }
     end
   end
 
   def col_complete?(token)
     board_trans = @board.transpose
     board_trans.any? do |row|
-      row.all? {|position| position == token}
+      row.all? { |position| position == token }
     end
   end
 
