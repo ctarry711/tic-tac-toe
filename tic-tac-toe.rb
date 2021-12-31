@@ -84,7 +84,7 @@ class Player
 
   def choose_move
     puts "#{@name}, please input a move (row, column)"
-    move = gets.chomp.split(",").map { |i| i.strip.to_i }
+    gets.chomp.split(",").map { |i| i.strip.to_i }
   end
 end
 
